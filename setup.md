@@ -1,6 +1,5 @@
 # Getting setup to run PnET on Windows10
 [**note:** we need someone to translate this to Mac and Linux OS] <br/>
-for Jack: https://www.youtube.com/watch?v=I0oNm6u4zUM
 ### Table of Contents
 + [Download PnET](#download-pnet)
 + [Install MinGW compiler](#install-mingw-compiler)
