@@ -36,7 +36,7 @@ VScode is a light-weight and modular code editor that can be configured nicely f
 1. Download the [Windows](https://code.visualstudio.com/download) installer, and install with the generic settings.
 2. From the shell, navigate *into* the **Pnet-master** directory. Launch VScode by using the command `code .` 
 3. Once VScode is running, search for and download the `C/C++ extension` from the Extension View (Ctrl+Shift+X). 
-4. On the left side of VScode, use the Explorer drop down to navigate to `pnet_linux` and open `pnet_main.cpp`
+4. If you downloaded a different version of PnET from the website, skip ahead to the next step. If you have downloaded or cloned *this* PnET-Master Repo, you should see a folder called **.vscode**, which containts two .json files: `c_cpp_properties.json` and `tasks.json`. These should be *mostly* configured correctly, but you'll have to change a few pathways. In `c_cpp_properties.json`, change **compilerPath** to the location of g++.exe on your computer (This is that Mingw pathway I told you to remember -- somewhere in program files). In `tasks.json`, change **"command":** and **"cwd":** the same way. Pay attention, **cwd** just points to \\bin and not to an executable. That should be it -- you should be able to skip ahead to [Compiling and executing](#compiling-and-executing).
 5. Open the `Command Palette` (Ctrl+Shift+P), and in the search bar, type *C/C++: Edit Configurations (UI)*
 6. Scroll down to `Compiler path`, and where it says `specify a compiler path...` paste in the path to the g++.exe compiler. This is the same path we included for our environment (see above) plus `g++.exe`. Altogether, this will look something like `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe`
 7. Scoll down to `IntelliSense mode` and set it to `gcc-x64`. All other settings should be fine. Now, on the left hand *Explorer*, there should be a folder called .vscode, and within it the *c_cpp_properties.json* file. This json file holds the configurations we just set, and we could edit this to make changes, too. 
@@ -47,13 +47,14 @@ VScode is a light-weight and modular code editor that can be configured nicely f
 `"cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"`
 11. Under `"Args:`, replace `${file}` with `${workspaceFolder}\\pnet_linux\\*.cpp` to tell vscode to build all .cpp files in the pnet_linux folder. [note to self: there must be a more generic way to include the pnet_linux in the workspace or paths.]
 12. Also under `Args:`, modify the line that says `${fileDirname}\\${fileBasenameNoExtension}.exe` to say `${fileDirname}\\pnet_executable.exe` to compile the pnet_executable. You can name the executable whatever you want.
-13. If under `Configure Default Build Task...` you are given the option to `Create a new tasks.json file from a template`, select this to open a tasks.json. In the pnet github repository there is a folder called `vscode_config_example`. Copy this tasks.json file to replace the one in vscode. Change command and cwd to point towards your compiler (see step 10)
+13. If under `Configure Default Build Task...` you are given the option to `Create a new tasks.json file from a template`, select this to open a tasks.json. In the pnet github repository there is a folder called `.vscode`. Copy the tasks.json file to replace the one in vscode. Change command and cwd to point towards your compiler (see step 10)
 
 ### Compiling and executing
 Any time the PnET code or input files are change, we have to compile a new executable program. The section below will step through compiling from VScode or from the the shell.
-1. In VScode, click `Terminal`, and then click `Run Build Task...` Alternatively, just press `Ctrl+Shift+B`.
-2. To run the model, there are several options. In the shell navigate into the `~pnet-master/pnet_linux` folder and type the command, `./pnet_executable` to run the compiled model. Or, with old-fashioned mouse clicking, go to the `~pnet-master/pnet_linux`folder. You would see the `pnet_executable.exe` file. You can click on this to run the program. [Note to self: is there way to run the model GUI style from VScode? Some extension?]
-3. Go look in `~/pnet-master/results/site`. You should see the generated output csv files.
+1. In VScode, use the left-hand *Explorer* pannel to navigate into  ~/Pnet_linux and open **PnET_main.cpp**
+2. click `Terminal`, and then click `Run Build Task...` Alternatively, just press `Ctrl+Shift+B`.
+3. To run the model, there are several options. In the shell navigate into the `~pnet-master/pnet_linux` folder and type the command, `./pnet_executable` to run the compiled model. Or, with old-fashioned mouse clicking, go to the `~pnet-master/pnet_linux`folder. You would see the `pnet_executable.exe` file. You can click on this to run the program. [Note to self: is there way to run the model GUI style from VScode? Some extension?]
+4. Go look in `~/pnet-master/results/site`. You should see the generated output csv files.
 
 ##### A note on compiling from the shell
 We could also easily compile from the shell:
