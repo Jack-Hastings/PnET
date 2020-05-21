@@ -31,7 +31,7 @@ We need a compiler to convert *human-readable* source code into *computer-execut
     `gdb --version`.
     + For each of these, a disclaimer about the software should pop up. If this fails, doublecheck the environment path settings described in step 2. 
 ### Install and configure Visual Studio Code
-VScode is a light-weight and modular code editor that can be configured nicely for PnET model development. [This section should probably be broken up somehow]
+VScode is a lightweight, opensource code editor that can be configured nicely to use for PnET development.
 1. Download the [Windows](https://code.visualstudio.com/download) installer, and install with the generic settings.
 2. From the shell, navigate *into* the **Pnet-master** directory. Launch VScode by using the command `code .` 
 3. Once VScode is running, search for and download the `C/C++ extension` from the Extension View (Ctrl+Shift+X). 
