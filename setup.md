@@ -9,7 +9,7 @@
 ### Download PnET 
 These directions are for the C++ Version of PnET-Daily. For more model choices, and more information go to the [PnET Website](http://www.pnet.sr.unh.edu/). 
 
-1. Download the PnET repository by clicking the green `Clone or download` button on the PnET repo page. Similarly, you can clone this repo to your own GitHub page. 
+1. Download the PnET repository by clicking the green `Clone or download` button on the PnET repo page. Similarly, you can fork this repository to your own GitHub page, and clone it to your local machine. 
 2.  The downloaded zip will be called **PnET-master.zip**. Extract the contents in your location of choice on your computer.
 ### Install MinGW compiler
 We need a compiler to convert *human-readable* source code into *computer-executable* machine code. For Windows, a common choice is a version of MinGW called **Mingw-w64**. 
