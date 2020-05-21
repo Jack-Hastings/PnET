@@ -13,8 +13,6 @@ These directions are for the C++ Version of PnET-Daily. For more model choices, 
 2.  The downloaded zip will be called **PnET-master.zip**. Extract the contents in your location of choice on your computer.
 ### Install MinGW compiler
 We need a compiler to convert *human-readable* source code into *computer-executable* machine code. For Windows, a common choice is a version of MinGW called **Mingw-w64**. 
-
-*Note that here we are following along with a [VScode setup tutoral](https://code.visualstudio.com/docs/cpp/config-mingw).*
 1. Go to [SOURCEFORGE](https://sourceforge.net/projects/mingw-w64/files/). Scroll down to **MinGW-W64 Online Installer** and download `MinGW-W64-install.exe`
 2. Run the installation file. We can proceed with default settings. However, on the **Settings** page, under the **Architecture** drop down, we can select either *i686* or *x86-64*. If you have a 64-bit processor, you can select *x86-64*. If you miss this, it shouldn't matter, though.  Also, pay attention to where the files are installed -- likely program files.
 3. Add MinGW `bin` to the PATH environment
@@ -32,6 +30,7 @@ We need a compiler to convert *human-readable* source code into *computer-execut
     + For each of these, a disclaimer about the software should pop up. If this fails, doublecheck the environment path settings described in step 2. 
 ### Install and configure Visual Studio Code
 VScode is a lightweight, opensource code editor that can be configured nicely to use for PnET development.
+*Check out the [VScode setup tutoral](https://code.visualstudio.com/docs/cpp/) for more info.*
 1. Download the [Windows](https://code.visualstudio.com/download) installer, and install with the generic settings.
 2. From the shell, navigate *into* the **Pnet-master** directory. Launch VScode by using the command `code .` 
 3. Once VScode is running, search for and download the `C/C++ extension` from the Extension View (Ctrl+Shift+X). 
