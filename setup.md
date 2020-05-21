@@ -13,7 +13,7 @@ These directions are for the C++ Version of PnET-Daily. For more model choices, 
 1. Download the PnET repository by clicking the green `Clone or download` button on the PnET repo page. Similarly, you can clone this repo to your own GitHub page. 
 2.  The downloaded zip will be called **PnET-master.zip**. Extract the contents in your location of choice on your computer.
 ### Install MinGW compiler
-We will also need a compiler to convert *human-readable* source code into *computer-executable* machine code. For Windows, a common choice is a version of MinGW called **Mingw-w64**. 
+We need a compiler to convert *human-readable* source code into *computer-executable* machine code. For Windows, a common choice is a version of MinGW called **Mingw-w64**. 
 
 *Note that here we are following along with a [VScode setup tutoral](https://code.visualstudio.com/docs/cpp/config-mingw).*
 1. Go to [SOURCEFORGE](https://sourceforge.net/projects/mingw-w64/files/). Scroll down to **MinGW-W64 Online Installer** and download `MinGW-W64-install.exe`
