@@ -30,7 +30,7 @@ We need a compiler to convert *human-readable* source code into *computer-execut
     + For each of these, a disclaimer about the software should pop up. If this fails, doublecheck the environment path settings described in step 2. 
 ### Install and configure Visual Studio Code
 VScode is a lightweight, opensource code editor that can be configured nicely to use for PnET development.
-*Check out the [VScode setup tutoral](https://code.visualstudio.com/docs/cpp/) for more info.*
+*Check out the [VScode setup tutoral](https://code.visualstudio.com/docs/cpp/config-mingw) for more info.*
 1. Download the [Windows](https://code.visualstudio.com/download) installer, and install with the generic settings.
 2. From the shell, navigate *into* the **Pnet-master** directory. Launch VScode by using the command `code .` 
 3. Once VScode is running, search for and download the `C/C++ extension` from the Extension View (Ctrl+Shift+X). 
